@@ -1,0 +1,33 @@
+<h4 style="color: blue;" class="small-heading">Send Us Feedback</h4>
+            <form onsubmit="data();return false;">
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="" for="Name">Your Name</label>
+                  <div class="form-group input-group">
+                    <span class="input-group-text"><i class="fas fa-users"></i></span>
+                    <input type="text" id="Name" required class="form-control form-group input-group">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="" for="email">Email Address</label>
+                  <div class="form-group input-group">
+                    <span class="input-group-text"><i class="fas fa-at"></i></span>
+                    <input type="email" id="email" required class="form-control form-group">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="comment">Your Feedback</label>
+                  <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-comment-dots"></i></span>
+                    </div>
+                    <textarea name="comment" id="comment" rows="5" class="form-control form-group"></textarea>
+                  </div>
+                </div>
+              </div>
+                <button class="btn btn-warning btn-lg">Submit</button>
+                <div id="ketqua"></div>
+            </form>
+

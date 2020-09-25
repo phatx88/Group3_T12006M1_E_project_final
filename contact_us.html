@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellInfo.Contact_us</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+
+    <!-- Google font -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'> -->
+
+    <!-- BOOSTRAP 4 CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Custom Css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- headline_animation -->
+    <link rel="stylesheet" href="css/headline_animation.css">
+
+    <!-- pin animation  -->
+    <link rel="stylesheet" href="css/pin_animation.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Files  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+    <!-----------------------------------------------------
+        PAGE PRELOADER ON LOAD
+    ------------------------------------------------------->
+
+    <div class="loader">
+        <img src="img/widget-loader-lg-en.gif" alt="Loading..." />
+    </div>
+
+    <!-----------------------------------------------------
+        MODAL7 - FOOTER INSTA LIGHT BOX
+    ------------------------------------------------------->
+    <!-- The Modal/Lightbox -->
+    <div id="myModallb" class="mylbModal">
+        <span class="close cursor" onclick="closeMyModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="img/footer/insta1.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="img/footer/insta2.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="img/footer/insta3.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="img/footer/insta4.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="img/footer/insta5.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="img/footer/insta6.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="img/footer/insta7.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="img/footer/insta8.jpg" style="width: 100%;">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="img/footer/insta9.jpg" style="width: 100%;">
+            </div>
+
+
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption" class="mb-0"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="d-flex justify-content-between overflow-hidden">
+
+                <div class="column">
+                    <img class="demo" src="img/footer/insta1.jpg" onclick="currentSlide(1)" style="width:50px"
+                        alt="Insta1">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/footer/insta2.jpg" onclick="currentSlide(2)" style="width:50px"
+                        alt="Insta2">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/footer/insta3.jpg" onclick="currentSlide(3)" style="width:50px"
+                        alt="Insta3">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/footer/insta4.jpg" onclick="currentSlide(4)" style="width:50px"
+                        alt="Insta4">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/footer/insta5.jpg" onclick="currentSlide(5)" style="width:50px"
+                        alt="Insta5">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/footer/insta6.jpg" onclick="currentSlide(6)" style="width:50px"
+                        alt="Insta6">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/footer/insta7.jpg" onclick="currentSlide(7)" style="width:50px"
+                        alt="Insta7">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/footer/insta8.jpg" onclick="currentSlide(8)" style="width:50px"
+                        alt="Insta8">
+                </div>
+                <div class="column">
+                    <img class="demo" src="img/footer/insta9.jpg" onclick="currentSlide(9)" style="width:50px"
+                        alt="Insta9">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------------------------------------
+        HEADER
+    ------------------------------------------------------->
+    <div class="wrapper">
+
+        <!-----------------------------------------------------
+        SIDE BAR
+        ------------------------------------------------------->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header text-nowrap pb-0 mt-1">
+                <h3 id="logo_askme_home" class="cd-headline rotate-1">
+                    <span>Ask </span>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">Me!</b>
+                        <b>Us?</b>
+                        <b>We!</b>
+                        <b>You</b>
+                    </span>
+                    <span>Mobile</span>
+                </h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p class='small-heading mb-0'>Category</p>
+                <li class="">
+                    <a href="index.html#iphone" data-toggle="" aria-expanded="false" class="" id="">Apple</a>
+                    <ul class="collapse list-unstyled" id="iphoneSubmenu">
+                        <li>
+                            <a href="#iphone">Iphone XR</a>
+                        </li>
+                        <li>
+                            <a href="#iphone">Iphone SE (2020)</a>
+                        </li>
+                        <li>
+                            <a href="#iphone">Iphone 11</a>
+                        </li>
+                        <li>
+                            <a href="#iphone">Iphone 11 Pro</a>
+                        </li>
+                        <li>
+                            <a href="#iphone">Iphone 11 Pro Max</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#samsung" data-toggle="" aria-expanded="false" class="" id="">Samsung</a>
+                    <ul class="collapse list-unstyled" id="samsungSubmenu">
+                        <li>
+                            <a href="#samsung">Samsung Galaxy A21s</a>
+                        </li>
+                        <li>
+                            <a href="#samsung">Samsung Galaxy A31</a>
+                        </li>
+                        <li>
+                            <a href="#samsung">Samsung Galaxy M31</a>
+                        </li>
+                        <li>
+                            <a href="#samsung">Samsung Galaxy M31s</a>
+                        </li>
+                        <li>
+                            <a href="#samsung">Samsung Galaxy S20</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#nokia" data-toggle="" aria-expanded="false" class="" id="">Nokia</a>
+                    <ul class="collapse list-unstyled" id="nokiaSubmenu">
+                        <li>
+                            <a href="#nokia">Nokia 2.3</a>
+                        </li>
+                        <li>
+                            <a href="#nokia">Nokia 5.3</a>
+                        </li>
+                        <li>
+                            <a href="#nokia">Nokia 7.2</a>
+                        </li>
+                        <li>
+                            <a href="#nokia">Nokia 8.3 5G</a>
+                        </li>
+                        <li>
+                            <a href="#nokia">Nokia C3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html#features" data-toggle="" aria-expanded="false" class="" id="">Features</a>
+                    <ul class="collapse list-unstyled" id="featuresSubmenu">
+                        <li>
+                            <a href="#best_seller">Best Selling</a>
+                        </li>
+                        <li>
+                            <a href="#newest_arrival">Newest Arrival</a>
+                        </li>
+                        <li>
+                            <a href="#sale">Sale</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="about_us.html" class="btn btn-warning hvr-icon-up"><i
+                            class="fas fa-user-friends hvr-icon"></i>
+                        About Us</a>
+                </li>
+
+                <li class="mt-4">
+                    <a href="index.html" id="change_home_bg" class="btn btn-danger hvr-icon-pulse-grow"><i
+                            class="fas fa-home hvr-icon"></i> Home
+                        Page</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <!-----------------------------------------------------
+            NAVBAR
+        ------------------------------------------------------->
+        <div id="content" class="active">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-secondary">
+                        <div class="nav-icon">
+                            <div></div>
+                        </div>
+                    </button>
+                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button"
+                            data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-align-justify"></i>
+                        </button>
+                        <div class="sidebar-header text-nowrap pb-0 mt-1 d-lg-none">
+                            <h3 id="logo_askme_home" class="cd-headline rotate-1 zoom_in">
+                                <span>Ask </span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Me!</b>
+                                    <b>You</b>
+                                    <b>Me?</b>
+                                    <b>Us?</b>
+                                    <b>We!</b>                        
+                                </span>
+                                <span>Mobile</span>
+                            </h3>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item ">
+                                    <a class="nav-link hvr-underline-from-center" href="index.html"
+                                        id="topHome">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link hvr-underline-from-center" href="about_us.html">About</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link hvr-underline-from-center" href="contact_us.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+
+            </nav>
+
+            <!-----------------------------------------------------
+                BANNER
+            ------------------------------------------------------->
+            <div class="banner_about container-fluid overflow-hidden p-0">
+
+                <div class="embed-responsive embed-responsive-16by9 text_logo">
+
+                    <video autoplay muted loop poster="img/vlcsnap-2020-09-10-09h33m25s677.jpg">
+                        <source src="" data-src="mp4\coverr--07-20-fitness-girl-exercising-in-city-38-4928.mp4"
+                            type="video/mp4" class="embed-responsive-item">
+                    </video>
+                </div>
+
+                <div class="text_box">
+                    <h3 class="heading_primary">
+                        <span class="heading_main">Contact Us</span>
+                        <span class="heading_sub">We’re in Business to Improve Lives</span>
+                    </h3>
+                    <span><a href="#contact" class="btn btn-white btn-animated">Learn More</a></span>
+                </div>
+            </div>
+
+            <!-----------------------------------------------------
+               CONTACT US
+            ------------------------------------------------------->
+            <section id="contact">
+
+                <div class="container-fluid text-center pb-5 pt-3">
+                    <div class="row mt-5 ">
+                        <div class="col-md-12">
+                            <h2 class="title large-heading hvr-bounce-in hvr-underline-from-center">Seek first to
+                                understand. Then to be
+                                understood.</h2>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <h3 class="title hvr-pulse-grow">Follow us</h3>
+                            <!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style mb-5">
+                                <div class="m-auto">
+                                    <a class="a2a_button_facebook"></a>
+                                    <a class="a2a_button_twitter"></a>
+                                    <a class="a2a_button_pinterest"></a>
+                                    <a class="a2a_button_linkedin"></a>
+                                    <a class="a2a_button_telegram"></a>
+                                    <a class="a2a_button_email"></a>
+                                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                                </div>
+                            </div>
+                            <!-- AddToAny END -->
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="title hvr-pulse-grow">Send us an Email</h3>
+                            <div class="API text-center mb-5">
+                                <a href="mailto:nghiapham27121998@outlook.com?subject=Your Feedback"
+                                    style="color: #d8345f;"> &#9993; askme@mobile.info</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-8 offset-md-2">
+                            <h3 class="title hvr-pulse-grow text-center">Have a Problem to report?</h3>
+                            <br>
+                            <a href="" class="hvr-icon-down">
+                                <i class="far fa-hand-point-down hvr-icon" data-toggle="tooltip" data-placement="top"
+                                    title="Click link below" data-trigger="hover"></i>
+                            </a>
+                            <br>
+                            <div class="feedback_box" id="addDoc">
+                                <a class="btn text-center" style="color: #d8345f;" onclick="loadDoc()">Tell us about it
+                                    here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid text-center">
+                    <div class="row mt-5">
+
+                        <div class="col-md-8 offset-md-2">
+
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 thumbnail mb-5">
+                                    <img class="img-fluid" src="img/thumbnail/FPT TANTHUAN.jpg" alt="building">
+                                </div>
+                                <div class="col-md-4 col-sm-12 text-center mb-5">
+                                    <h3 class="title">Contact Address</h3>
+                                    <svg class="pin" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                        xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" version="1.1">
+                                        <g class="pin__group">
+                                            <g class="pin__grayGroup">
+                                                <path class="pin__square" fill="none" stroke-width="1"
+                                                    d="M0,0 0,60 60,60 60,0z" />
+                                                <path class="pin__line pin__line-1" fill="none" stroke-width="1"
+                                                    d="M15,0 15,60" />
+                                                <path class="pin__line pin__line-2" fill="none" stroke-width="1"
+                                                    d="M30,0 30,60" />
+                                                <path class="pin__line pin__line-3" fill="none" stroke-width="1"
+                                                    d="M45,0 45,60" />
+                                                <path class="pin__line pin__line-1" fill="none" stroke-width="1"
+                                                    d="M0,45 60,45" />
+                                                <path class="pin__line pin__line-2" fill="none" stroke-width="1"
+                                                    d="M0,30 60,30" />
+                                                <path class="pin__line pin__line-3" fill="none" stroke-width="1"
+                                                    d="M0,15 60,15" />
+                                                <path class="pin__circleBig" fill="none" stroke-width="1"
+                                                    d="M60,30 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0" />
+                                                <path class="pin__circleSmall" fill="none" stroke-width="1"
+                                                    d="M45,30 a15,15 0 0,1 -30,0 a15,15 0 0,1 30,0" />
+                                            </g>
+                                            <g class="pin__greenGroup">
+                                                <path class="pin__outer" stroke-width="2"
+                                                    d="M30,0 a30,30 0 0,1 30,30 L60,60 30,60 a30,30 0 0,1 0,-60" />
+                                                <path class="pin__inner" stroke-width="2"
+                                                    d="M45,30 a15,15 0 0,1 -30,0 a15,15 0 0,1 30,0" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                    <address class="mt-2">
+                                        <strong> AskMe!Mobile ltd. </strong> <br>
+                                        FPT Aptech Computer Education <br>
+                                        590 CMT Street, District 3, HCMC <br>
+                                        70000, Vietnam <br>
+                                    </address>
+                                </div>
+                                <div class="col-md-4 col-sm-12 thumbnail mb-5">
+                                    <img class="img-fluid" src="img/thumbnail/fpt-building.jpg" alt="building">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row iframe_container pb-5 pt-5">
+                        <div class="col-md-8 offset-md-2">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.322629018092!2d106.66391391474913!3d10.786583192314632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1svi!2s!4v1597897552778!5m2!1svi!2s"
+                                width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0" class="w-100"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-----------------------------------------------------
+               FOOTER
+            ------------------------------------------------------->
+
+            <footer id="footer">
+                <div class="container-fluid">
+
+                    <div class="carousel-1 owl-carousel partner">
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/iPhone-(Apple)42-b_16.jpg" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Samsung42-b_25.jpg" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Nokia42-b_21.jpg" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/BlackBerry42-b_38.png" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Coolpad42-b_33.png" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Vsmart42-b_40.png" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Itel42-b_54.jpg" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Masstel42-b_0.png" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Vivo42-b_50.jpg" alt="">
+                        </div>
+                        <div class="item hvr-grow-rotate">
+                            <img src="img/brand/Energizer42-b_32.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <h3 class="title">Cell.info.com</h5>
+                                    <p class="mb-2">AskMe! ltd is a proud member of the HCMC community. We strive to
+                                        educate and
+                                        collaborate with like-minded businesses to make a difference environmentally and
+                                        socially. Let’s collaborate.</p>
+                                    <b><span style="font-size: 30px;">15k</span> followers</b>
+                                    <hr>
+                                    Share:
+                                    <i class="fab fa-facebook" style="color: lightblue;"> </i>
+                                    <i class="fab fa-twitter" style="color: lightblue;"> </i>
+                                    <i class="fab fa-instagram-square" style="color: lightblue;"> </i>
+                                    <i class="fab fa-pinterest" style="color: lightblue;"> </i>
+                                    <i class="fab fa-youtube" style="color: lightblue;"> </i>
+                                    <i class="fab fa-google" style="color: lightblue;"> </i>
+                                    <form>
+                                        <div class="form-inline">
+                                            <input type="text" class="form-control" placeholder="Your email">
+                                            <button class="btn btn-primary">Subcribes</button>
+                                        </div>
+                                    </form>
+                            </div>
+
+
+                            <div class="col-12 col-sm-6 col-lg-5">
+                                <div class="blog">
+                                    <h5 class="title">Blogs</h5>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-5">
+                                                <a><img src="img/footer/blog.jpg" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="col-6 col-sm-7 pl-0 pr-5 mb-1">
+                                                <div>
+                                                    <p>The 5 Secrets You Will Never Know About Your Phones.</p>
+                                                </div>
+                                                <span class="blog-date">14 Sep 2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-5">
+                                                <a><img src="img/footer/blog2.jpg" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="col-6 col-sm-7 pl-0 pr-5 mb-1">
+                                                <div>
+                                                    <p>The 10 Steps Needed For Putting Smart Phones Into Action.</p>
+                                                </div>
+                                                <span class="blog-date">1 July 2020</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-5">
+                                                <a><img src="img/footer/blog3.jpg" class="img-fluid" alt=""></a>
+                                            </div>
+                                            <div class="col-6 col-sm-7 pl-0 pr-5 mb-1">
+                                                <div>
+                                                    <p>6 Online Communities About Apple Products You Should Join</p>
+                                                </div>
+                                                <span class="blog-date">28 Mar 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <div class="insta">
+                                    <h5 class="title">Instagram</h5>
+                                    <div class="row" style="cursor: pointer;">
+                                        <div class="col-4"><img src="img/footer/insta1.jpg"
+                                                onclick="openMyModal();currentSlide(1)" class="hover-shadow img-fluid"
+                                                alt=""></div>
+                                        <div class="col-4"><img src="img/footer/insta2.jpg"
+                                                onclick="openMyModal();currentSlide(2)" class="hover-shadow img-fluid"
+                                                alt=""></div>
+                                        <div class="col-4"><img src="img/footer/insta3.jpg"
+                                                onclick="openMyModal();currentSlide(3)" class="hover-shadow img-fluid"
+                                                alt=""></div>
+                                        <div class="col-4"><img src="img/footer/insta4.jpg"
+                                                onclick="openMyModal();currentSlide(4)" class="hover-shadow img-fluid"
+                                                alt=""></div>
+                                        <div class="col-4"><img src="img/footer/insta5.jpg"
+                                                onclick="openMyModal();currentSlide(5)" class="hover-shadow img-fluid"
+                                                alt=""></div>
+                                        <div class="col-4"><img src="img/footer/insta6.jpg"
+                                                onclick="openMyModal();currentSlide(6)" class="hover-shadow img-fluid"
+                                                alt=""></div>
+
+                                        <div class="col-4"><a><img src="img/footer/insta7.jpg"
+                                                    onclick="openMyModal();currentSlide(7)"
+                                                    class="hover-shadow img-fluid" alt=""></a></div>
+                                        <div class="col-4"><a><img src="img/footer/insta8.jpg"
+                                                    onclick="openMyModal();currentSlide(8)"
+                                                    class="hover-shadow img-fluid" alt=""></a></div>
+                                        <div class="col-4"><a><img src="img/footer/insta9.jpg"
+                                                    onclick="openMyModal();currentSlide(9)"
+                                                    class="hover-shadow img-fluid" alt=""></a></div>
+                                    </div>
+                                    <a class="view-more-photo" onclick="openMyModal()">View more photos</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <p class="mb-0 footer_bottom text-center"><strong> &copy 2020 Developed by group 3, class
+                                T1-2006-M1, ACCP 6775, Semester 1, FPT
+                                Aptech HCMC Center</strong> </p>
+                        <!-- <a href="javascript:void()" class="btn btn-danger back-to-top hvr-icon-up"> -->
+                        <a href="javascript:void(0)" class="btn btn-danger back-to-top hvr-icon-up">
+                            <i class="fas fa-angle-up hvr-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <!-- jQuery CDN  -->
+    <script src="vendor/JQuerry/jquery-1.12.4.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="vendor/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- Custom light box JS -->
+    <script src="js/light_box.js"></script>
+
+    <!-- Custom JS  -->
+    <script src="js/script.js"></script>
+
+    <!-- Custom headline animation JS  -->
+    <script src="js/headline_animation.js"></script>
+
+    <script>
+        // hiding top nav on top 
+        // $(window).load(function () {
+        //     $('#navbar').fadeOut("slow");
+        // });
+
+        // $(window).scroll(function () {
+        //     if ($(this).scrollTop() != 0) {
+        //         $('#navbar').fadeIn("slow");
+        //     }
+        //     else {
+        //         $('#navbar').fadeOut("slow");
+        //     }
+        // });
+
+        //smooth scrolling from top to #contact
+        $('a.btn-animated').on('click', function (e) {
+            e.preventDefault();
+            var target = this.hash;
+            if (target) {
+                var targetObj = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': targetObj.offset().top
+                }, 1000, 'swing', function () {
+                    window.location.hash = target;
+                })
+            }
+        });
+    </script>
+</body>
+
+</html>
