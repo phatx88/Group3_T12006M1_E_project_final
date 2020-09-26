@@ -2486,11 +2486,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form onsubmit="return false;">
+                    <form onsubmit="alert ('We received your numbers. Thank you!') ; $('#CTA_clickToCall').modal('hide') ; return false ">
                         <p style="text-align: center;">Please leave us your numbers and one of our agents will contact
                             you within the first 5 minutes.</p>
                         <div class="form-group input-group">
-                            <input type="text" class="form-control" placeholder="Your phone numbers..." required>
+                            <input type="text" class="form-control" placeholder="Your phone numbers..." required pattern="^[\d]{5,}$" title="must be at least 5 digits">
                             <div class="input-group-append">
                                 <span class="input-group-text bg-warning text-white">Contact Request</span>
                             </div>
