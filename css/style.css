@@ -676,7 +676,7 @@ button#sidebarCollapse+button {
     padding-bottom: 0;
 }
 
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 568px) {
     #content div.CTA_chat {
         display: none !important;
     }
