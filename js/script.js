@@ -1,6 +1,6 @@
-    /* ---------------------------------------------------
-    Customer Page Preloader
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+Customer Page Preloader
+----------------------------------------------------- */
 //Page preloader JS
 //Module for preloading page
 window.addEventListener("load", function () {
@@ -126,7 +126,7 @@ $(document).ready(function () {
     ----------------------------------------------------- */
     // Custom code to Match dropdown menu with carousel item --start
     var carousel = $("#iphone-carousel");
-    $("#iphoneSubmenu li:nth-child(1) a, #fbody li:nth-child(1) a").click(function (e) {
+    $("#iphoneSubmenu li:nth-child(1) a").click(function (e) {
         e.preventDefault();
         carousel.trigger("to.owl.carousel", [0, 500, true]);
         //adding glowing animation to selected card and remove others
@@ -135,7 +135,7 @@ $(document).ready(function () {
         $('div').not('#iphone-carousel > div.card-1').removeClass('glow');
         $('#iphone-carousel div.card-1').addClass('glow');
     });
-    $("#iphoneSubmenu li:nth-child(2) a, #fbody li:nth-child(2) a").click(function (e) {
+    $("#iphoneSubmenu li:nth-child(2) a").click(function (e) {
         e.preventDefault();
         carousel.trigger("to.owl.carousel", [1, 500, true]);
         $('a').not(this).removeClass('active');
@@ -151,7 +151,7 @@ $(document).ready(function () {
         $('div').not('#iphone-carousel > div.card-3').removeClass('glow');
         $('#iphone-carousel div.card-3').addClass('glow');
     });
-    $("#iphoneSubmenu li:nth-child(4) a, #fbody li:nth-child(3) a").click(function (e) {
+    $("#iphoneSubmenu li:nth-child(4) a").click(function (e) {
         e.preventDefault();
         carousel.trigger("to.owl.carousel", [3, 500, true]);
         $('a').not(this).removeClass('active');
@@ -177,7 +177,7 @@ $(document).ready(function () {
         $('div').not('#samsung-carousel > div.card-1').removeClass('glow');
         $('#samsung-carousel div.card-1').addClass('glow');
     });
-    $("#samsungSubmenu li:nth-child(2) a, #fbody li:nth-child(4) a").click(function (e) {
+    $("#samsungSubmenu li:nth-child(2) a").click(function (e) {
         e.preventDefault();
         carousel2.trigger("to.owl.carousel", [1, 500, true]);
         $('a').not(this).removeClass('active');
@@ -185,7 +185,7 @@ $(document).ready(function () {
         $('div').not('#samsung-carousel > div.card-2').removeClass('glow');
         $('#samsung-carousel div.card-2').addClass('glow');
     });
-    $("#samsungSubmenu li:nth-child(3) a, #fbody li:nth-child(5) a").click(function (e) {
+    $("#samsungSubmenu li:nth-child(3) a").click(function (e) {
         e.preventDefault();
         carousel2.trigger("to.owl.carousel", [2, 500, true]);
         $('a').not(this).removeClass('active');
@@ -193,7 +193,7 @@ $(document).ready(function () {
         $('div').not('#samsung-carousel > div.card-3').removeClass('glow');
         $('#samsung-carousel div.card-3').addClass('glow');
     });
-    $("#samsungSubmenu li:nth-child(4) a, #fbody li:nth-child(6) a").click(function (e) {
+    $("#samsungSubmenu li:nth-child(4) a").click(function (e) {
         e.preventDefault();
         carousel2.trigger("to.owl.carousel", [3, 500, true]);
         $('a').not(this).removeClass('active');
@@ -219,7 +219,7 @@ $(document).ready(function () {
         $('div').not('#nokia-carousel > div.card-1').removeClass('glow');
         $('#nokia-carousel div.card-1').addClass('glow');
     });
-    $("#nokiaSubmenu li:nth-child(2) a, #fbody li:nth-child(7) a").click(function (e) {
+    $("#nokiaSubmenu li:nth-child(2) a").click(function (e) {
         e.preventDefault();
         carousel3.trigger("to.owl.carousel", [1, 500, true]);
         $('a').not(this).removeClass('active');
@@ -227,7 +227,7 @@ $(document).ready(function () {
         $('div').not('#nokia-carousel > div.card-2').removeClass('glow');
         $('#nokia-carousel div.card-2').addClass('glow');
     });
-    $("#nokiaSubmenu li:nth-child(3) a, #fbody li:nth-child(8) a").click(function (e) {
+    $("#nokiaSubmenu li:nth-child(3) a").click(function (e) {
         e.preventDefault();
         carousel3.trigger("to.owl.carousel", [2, 500, true]);
         $('a').not(this).removeClass('active');
@@ -235,7 +235,7 @@ $(document).ready(function () {
         $('div').not('#nokia-carousel > div.card-3').removeClass('glow');
         $('#nokia-carousel div.card-3').addClass('glow');
     });
-    $("#nokiaSubmenu li:nth-child(4) a, #fbody li:nth-child(9) a").click(function (e) {
+    $("#nokiaSubmenu li:nth-child(4) a").click(function (e) {
         e.preventDefault();
         carousel3.trigger("to.owl.carousel", [3, 500, true]);
         $('a').not(this).removeClass('active');
@@ -296,7 +296,7 @@ $(document).ready(function () {
 
     // Custom code to Match dropdown menu with carousel item --end
 
-    
+
     /* ---------------------------------------------------
     popover/tooltip/pointer cursor
     ----------------------------------------------------- */
@@ -323,6 +323,15 @@ $(document).ready(function () {
     $('.card').mousedown(function () {
         $(this).css('cursor', 'grabbing');
         $('.card-img-top').css('cursor', 'grabbing');
+    });
+
+    /* ---------------------------------------------------
+    Footer Subscribe button
+    ----------------------------------------------------- */
+    $('footer .social form .form-inline .btn').click(function (e) {
+        e.preventDefault();
+        alert ('Thank you for subscribed!');
+
     });
 
 
@@ -375,7 +384,7 @@ $(document).ready(function () {
     Smooth scrolling 
     ----------------------------------------------------- */
     //smooth scroll for a in the sidepanel session
-    $('.wrapper nav ul#category li ul li a, .wrapper nav .popover_search ul li a').on('click', function (e) {
+    $('.wrapper nav ul#category li ul li a').on('click', function (e) {
         e.preventDefault();
         var target = this.hash;
         if (target) {
@@ -456,9 +465,9 @@ $(document).ready(function () {
 
 
 
-    /* ---------------------------------------------------
-    XMLHTTP REQUEST FOR CONTACT US PAGE
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+XMLHTTP REQUEST FOR CONTACT US PAGE
+----------------------------------------------------- */
 
 //Loading AJAXinfo.text in contact page 
 
@@ -478,9 +487,9 @@ function data() {
 }
 
 
-    /* ---------------------------------------------------
-    Back to top/ Call to Click function
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+Back to top/ Call to Click function
+----------------------------------------------------- */
 
 //hiding back-to-top button when on Top
 function toggleBacktoTop() {
@@ -502,30 +511,28 @@ function toggleCalltoClick() {
 }
 
 
-    /* ---------------------------------------------------
-    Hiding Navbar when scrolling down
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+Hiding Navbar when scrolling down
+----------------------------------------------------- */
 
 // hiding navbar when scroll 
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) 
-    {
+    if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
     }
-    else
-    {
+    else {
         document.getElementById("navbar").style.top = "-200px";
     }
     prevScrollpos = currentScrollPos;
 }
 
 
-    /* ---------------------------------------------------
-    Video auto play - function
-    ----------------------------------------------------- */
+/* ---------------------------------------------------
+Video auto play - function
+----------------------------------------------------- */
 // Contact Us Video function 
 function deferVideo() {
 

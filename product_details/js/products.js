@@ -1,4 +1,23 @@
 /* ---------------------------------------------------
+    Close rating modal
+----------------------------------------------------- */
+$('#review-form').submit(function (e) { 
+  e.preventDefault();
+  $('#staticBackdrop-2').modal('hide');
+  
+});
+
+
+/* ---------------------------------------------------
+    Footer Subscribe button
+    ----------------------------------------------------- */
+    $('footer .social form .form-inline .btn').click(function (e) {
+      e.preventDefault();
+      alert ('Thank you for subscribed!');
+
+  });
+  
+/* ---------------------------------------------------
     Bach to top
 ----------------------------------------------------- */
 
