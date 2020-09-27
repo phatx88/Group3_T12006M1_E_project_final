@@ -2041,12 +2041,18 @@ img.hover-shadow {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 768px) {
     .heading_main {
         font-size: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .heading_sub {
         font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .text_box>span a {
         font-size: 10px !important;
@@ -2055,10 +2061,12 @@ img.hover-shadow {
 
 @media screen and (max-width: 992px) {
     .heading_main {
-        font-size: 24px;
+        font-size: 31px;
+        letter-spacing: 4px;
     }
     .heading_sub {
-        font-size: 12px;
+        font-size: 14px;
+        letter-spacing: 2px;
     }
     .text_box>span a {
         font-size: 10px !important;

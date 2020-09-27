@@ -895,7 +895,7 @@ footer .back-to-top {
     display: block;
     font-size: 62px;
     font-weight: 400px;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     animation: moveLeft 5s ease-out;
     /* animation-delay: 1s; */
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
@@ -905,18 +905,38 @@ footer .back-to-top {
     display: block;
     font-size: 20px;
     font-weight: 700px;
-    letter-spacing: 15px;
+    letter-spacing: 3px;
     animation: moveRight 5s ease-out;
     /* animation-delay: 1s; */
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .heading_main {
         font-size: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+        margin-top: 10px;
     }
     .heading_sub {
         font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .text_box>span a {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heading_main {
+        font-size: 31px;
+        letter-spacing: 4px;
+    }
+    .heading_sub {
+        font-size: 14px;
+        letter-spacing: 2px;
     }
     .text_box>span a {
         font-size: 10px !important;
