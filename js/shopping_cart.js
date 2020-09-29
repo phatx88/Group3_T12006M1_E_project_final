@@ -155,7 +155,7 @@ $('.add-to-cart').click(function (event) {
 // Clear items
 $('.clear-cart').click(function () {
     shoppingCart.clearCart();
-    displayCart();
+    displayCart();  
 });
 
 
@@ -178,6 +178,13 @@ function displayCart() {
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
+    //adding shopping cart only display when have at least one item
+    if (shoppingCart.totalCount() == 0)
+    {
+    $('span.total-count').addClass('d-none');
+    }
+    else
+    $('span.total-count').removeClass('d-none');
 }
 
 // Delete item button
@@ -211,3 +218,44 @@ $('.show-cart').on("change", ".item-count", function (event) {
 });
 
 displayCart();
+
+
+//Add to cart animation source from code pen
+$('.add-to-cart').on('click', function () {
+    var cart = $('.shopping-cart');
+    var imgtodrag = $(this).parents('.card').find("img").eq(0);
+    if (imgtodrag) {
+        var imgclone = imgtodrag.clone()
+            .offset({
+            top: imgtodrag.offset().top,
+            left: imgtodrag.offset().left
+        })
+            .css({
+            'opacity': '0.8',
+                'position': 'absolute',
+                'height': '150px',
+                'width': '100px',
+                'z-index': '100'
+        })
+            .appendTo($('body'))
+            .animate({
+            'top': cart.offset().top - 20,
+                'left': cart.offset().left - 20,
+                'width': '25px',
+                'height': '50px'
+        }, 400, 'easeInOutExpo');
+        
+        setTimeout(function () {
+            cart.effect("shake", {
+                times: 2
+            }, 300);
+        }, 500);
+
+        imgclone.animate({
+            'width': 0,
+                'height': 0
+        }, function () {
+            $(this).detach()
+        });
+    }
+});

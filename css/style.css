@@ -905,7 +905,7 @@ body {
 }
 
 img.card-img-top {
-    width: 180px;
+    width: 100%;
     height: auto;
 }
 
@@ -2379,11 +2379,6 @@ footer .back-to-top {
     margin-bottom: 20px;
 }
 
-.card-img-top {
-    width: 200px;
-    height: 200px;
-    align-self: center;
-}
 
 .input-group>.form-control {
     min-width: 50px;
