@@ -504,9 +504,11 @@ Back to top/ Call to Click function
 function toggleBacktoTop() {
     if ($(window).scrollTop() == 0) {
         $('.back-to-top').hide("slow");
+        $('.cart_wrapper').hide("slow");
     }
     else {
         $('.back-to-top').show("slow");
+        $('.cart_wrapper').show("slow");
     }
 }
 

@@ -233,14 +233,14 @@ $('.add-to-cart').on('click', function () {
             .css({
             'opacity': '0.8',
                 'position': 'absolute',
-                'height': '150px',
-                'width': '100px',
+                'height': '125px',
+                'width': '75px',
                 'z-index': '100'
         })
             .appendTo($('body'))
             .animate({
-            'top': cart.offset().top - 20,
-                'left': cart.offset().left - 20,
+            'top': cart.offset().top - 30,
+                'left': cart.offset().left - 30,
                 'width': '25px',
                 'height': '50px'
         }, 400, 'easeInOutExpo');

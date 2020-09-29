@@ -629,7 +629,7 @@ button#sidebarCollapse+button {
     color: white;
     font-size: 20px;
     position: fixed;
-    top: 35%;
+    top: 30%;
     right: 0;
     z-index: 999;
     display: flex;
@@ -2357,6 +2357,16 @@ footer .back-to-top {
 /* ---------------------------------------------------
     Shopping Cart
 ----------------------------------------------------- */
+
+.cart_wrapper {
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    padding: 10px;
+    z-index: 999;
+    border-radius: 50%;
+    color: #333333;
+}
 
 .show-cart li {
     display: flex;
