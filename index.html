@@ -2642,6 +2642,36 @@
         </div>
     </div>
 
+    <!-----------------------------------------------------
+        MODAL0 - SHOPPING CART MODAL
+    ------------------------------------------------------->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body overflow-auto">
+                    <div class="table-responsive">
+                        <table class="show-cart table">
+
+                        </table>
+                    </div>
+                    <div class="text-right pr-4"><b>Total: $<span class="total-cart"></span> </b> </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="clear-cart btn btn-danger">Reset</button>
+                    <a href="check_out.html">
+                        <button type="button" class="btn btn-primary">Check out</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-----------------------------------------------------
         HEADER
@@ -2972,9 +3002,19 @@
                             <span>Mobile</span>
                         </h3>
                     </div>
-
+                    <div>
+                        <i class="fa fa-shopping-cart d-lg-none" data-toggle="modal" data-target="#cart">
+                            <b><span class="total-count badge badge-danger"></span></b>
+                        </i>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <i class="fa fa-shopping-cart d-none d-lg-block mr-5 mt-2" data-toggle="modal"
+                                    data-target="#cart">
+                                    <b><span class="total-count badge badge-danger"></span></b>
+                                </i>
+                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link hvr-underline-from-center" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" id="topHome">Menu <i
@@ -3051,8 +3091,8 @@
                                 <a href="product_details/detail_iphone_11.html" target="_blank">
                                     <h5 class="card-title text-center">iPhone 11</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Iphone&nbsp11" data-price="899" data-img="/Iphone/apple-iphone-11-pro">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2019, September 20 <br>
                                     <i class="fas fa-mobile-alt"></i> 194g, 8.1mm thickness <br>
                                     <i class="fab fa-windows"></i> iOS 13, up to iOS 13.6.1 <br>
                                     <i class="fas fa-sd-card"></i> 64GB/128GB/256GB storage, no card slot
@@ -3060,8 +3100,9 @@
                             </div>
                             <div class="card-footer text-center">
                                 <a href="#" class="btn btn-primary hvr-icon-spin" data-toggle="modal"
-                                    data-target="#exampleModal"><i class="fas fa-sync hvr-icon"></i> Compare</a> <a
-                                    href="docs/iPHONE 11.docx" class="btn btn-warning hvr-icon-drop"
+                                    data-target="#exampleModal">
+                                    <i class="fas fa-sync hvr-icon"></i> Compare</a>
+                                <a href="docs/iPHONE 11.docx" class="btn btn-warning hvr-icon-drop"
                                     data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
                             </div>
                         </div>
@@ -3075,11 +3116,11 @@
                             </a>
                             <div class="card-body">
                                 <a href="product_details/detail_iphoneXR.html" data-toggle="tooltip"
-                                    data-placement="top" title="Click for more detail" target="_blank">
-                                    <h5 class="card-title text-center">Apple iphone XR</h5>
-                                </a>
+                                data-placement="top" title="Click for more detail" target="_blank">
+                                <h5 class="card-title text-center">Apple iphone XR</h5>
+                            </a>
+                            <a class="add-to-cart btn btn-danger" data-name="Iphone&nbspXR" data-price="699" data-img="/Iphone/apple-iphone-xr-new">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2018, October 26 <br>
                                     <i class="fas fa-mobile-alt"></i> 194g, 7.3mm thickness <br>
                                     <i class="fab fa-windows"></i> iOS 12, up to iOS 13.6.1 <br>
                                     <i class="fas fa-sd-card"></i> 64GB/128GB/256GB storage, no card slot
@@ -3103,8 +3144,8 @@
                                 <a href="product_details/detail_iphoneSE_2020.html" target="_blank">
                                     <h5 class="card-title text-center">iPhone SE(2020)</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Iphone&nbspSE(2020)" data-price="999" data-img="/Iphone/apple-iphone-se-2020">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, April 24 <br>
                                     <i class="fas fa-mobile-alt"></i> 148g, 7.3mm thickness <br>
                                     <i class="fab fa-windows"></i> iOS 13 <br>
                                     <i class="fas fa-sd-card"></i> 64GB/128GB/256GB storage, no card slot <br>
@@ -3128,9 +3169,9 @@
                                 <a href="product_details/detail_iphone_11_pro.html" target="_blank">
                                     <h5 class="card-title text-center">iPhone 11 Pro</h5>
                                 </a>
-
+                                
+                                <a class="add-to-cart btn btn-danger" data-name="Iphone&nbsp11&nbspPro" data-price="999" data-img="/Iphone/apple-iphone-11-pro">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2019, September 20 <br>
                                     <i class="fas fa-mobile-alt"></i> 194g, 8.1mm thickness <br>
                                     <i class="fab fa-windows"></i> iOS 13, up to iOS 13.6.1 <br>
                                     <i class="fas fa-sd-card"></i> 64GB/128GB/256GB storage, no card slot
@@ -3154,8 +3195,8 @@
                                 <a href="product_details/detail_iphone_11_pro_max.html" target="_blank">
                                     <h5 class="card-title text-center">iPhone 11 Pro Max</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Iphone&nbsp11&nbspPro&nbspMax" data-price="1199" data-img="/Iphone/apple-iphone-11-pro-max-">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2019, September 20 <br>
                                     <i class="fas fa-mobile-alt"></i> 226g, 8.1mm thickness <br>
                                     <i class="fab fa-windows"></i> iOS 13, up to iOS 13.6.1 <br>
                                     <i class="fas fa-sd-card"></i> 64GB/256GB/512GB storage, no card slot
@@ -3194,9 +3235,8 @@
                                 <a href="product_details/detail_iphone_11_pro_max.html" target="_blank">
                                     <h5 class="card-title text-center">Samsung Galaxy M31s</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Galaxy&nbspM31s" data-price="499" data-img="/Samsung/samsung-galaxy-m31s">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, August 06
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 203g, 9.3mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10, One UI 2.0
@@ -3223,9 +3263,8 @@
                                 <a href="product_details/detail_samsung_A21s.html" target="_blank">
                                     <h5 class="card-title text-center">Samsung Galaxy A21s</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Galaxy&nbspA21s" data-price="499" data-img="/Samsung/samsung-galaxy-a21s-">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, June 02
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 192g, 8.9mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10, One UI 2.0
@@ -3252,9 +3291,8 @@
                                 <a href="product_details/detail_samsung_A31.html" target="_blank">
                                     <h5 class="card-title text-center">Samsung Galaxy A31</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Galaxy&nbspA31" data-price="699" data-img="/Samsung/samsung-galaxy-a31">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, April 27
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 185g, 8.6mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10, One UI 2.0
@@ -3281,9 +3319,8 @@
                                 <a href="product_details/detail_samsung_M31.html" target="_blank">
                                     <h5 class="card-title text-center">Samsung Galaxy M31</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Galaxy&nbspM31" data-price="599" data-img="/Samsung/samsung-galaxy-m31-sm-m315f">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, March 05
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 191g, 8.9mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10, One UI 2.0
@@ -3310,9 +3347,8 @@
                                 <a href="product_details/detail_samsung_S20.html" target="_blank">
                                     <h5 class="card-title text-center">Samsung Galaxy S20</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Galaxy&nbspS20" data-price="1099" data-img="/Samsung/samsung-galaxy-s20-fe-5g-r">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, March 06
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 163g, 7.9mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10, One UI 2.5
@@ -3358,15 +3394,13 @@
                                 <a href="product_details/detail_nokia_C3.html" target="_blank">
                                     <h5 class="card-title text-center">Nokia C3</h5>
                                 </a>
-                                <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, August 13
-                                    <br>
+                                <a class="add-to-cart btn btn-danger" data-name="Nokia&nbspC3" data-price="299" data-img="/Nokia/nokia-c3-2020">Add To Cart</a>
+                                <p class="card-text">                                   
                                     <i class="fas fa-mobile-alt"></i> 184.5g, 8.7mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10
-                                    <br> <br>
+                                    <br> 
                                     <i class="fas fa-sd-card"></i> 32GB storage, microSDXC
-                                    <br>
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -3387,13 +3421,12 @@
                                 <a href="product_details/detail_nokia_2-3.html" target="_blank">
                                     <h5 class="card-title text-center">Nokia 2.3</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Nokia&nbsp2.3" data-price="399" data-img="/Nokia/nokia-23">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2019, December 19 <br>
                                     <i class="fas fa-mobile-alt"></i> 183g, 8.7mm thickness <br>
                                     <i class="fab fa-windows"></i> Android 9.0, up to Android 10, Android One
                                     <br>
                                     <i class="fas fa-sd-card"></i> 32GB storage, microSDXC
-                                    <br>
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -3411,18 +3444,17 @@
                                     class="card-img-top img-fluid mx-auto d-block" alt="...">
                             </a>
                             <div class="card-body">
-
-                                <h5 class="card-title text-center">Nokia 5.3</h5>
-
+                                <a href="product_details/detail_nokia_5-3.html" target="_blank">
+                                    <h5 class="card-title text-center">Nokia 5.3</h5>
+                                </a>
+                                    
+                                <a class="add-to-cart btn btn-danger" data-name="Nokia&nbsp5.3" data-price="699" data-img="/Nokia/nokia-53">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2020, April 02
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 185g, 8.5mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> up to Android 10, Android One
                                     <br>
                                     <i class="fas fa-sd-card"></i> 64GB storage, microSDXC
-                                    <br><br>
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -3443,15 +3475,13 @@
                                 <a href="product_details/detail_nokia_7.2.html" target="_blank">
                                     <h5 class="card-title text-center">Nokia 7.2</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Nokia&nbsp7.2" data-price="999" data-img="/Nokia/nokia-72">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Released 2019, September 23
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 180g, 8.3mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 9.0, up to Android 10, Android One
                                     <br>
                                     <i class="fas fa-sd-card"></i> 64GB/128GB storage, microSDXC
-                                    <br>
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -3464,23 +3494,21 @@
                     </div>
                     <div class="card card-4 hvr-bob d-block">
                         <div class="card h-100">
-                            <a href="product_details/detail_nokia_2-3.html" target="_blank">
+                            <a href="product_details/detail_nokia_8-3.html" target="_blank">
                                 <img loading="lazy" src="img/Nokia/nokia-83-5g.jpg"
                                     class="card-img-top img-fluid mx-auto d-block" alt="...">
                             </a>
                             <div class="card-body">
-                                <a href="product_details/detail_nokia_2-3.html" target="_blank">
+                                <a href="product_details/detail_nokia_8-3.html" target="_blank">
                                     <h5 class="card-title text-center">Nokia 8.3 5G</h5>
                                 </a>
+                                <a class="add-to-cart btn btn-danger" data-name="Nokia&nbsp8.3" data-price="1099" data-img="/Nokia/nokia-83-5g">Add To Cart</a>
                                 <p class="card-text">
-                                    <i class="fas fa-calendar-day"></i> Exp. release 2020, October 08
-                                    <br>
                                     <i class="fas fa-mobile-alt"></i> 220g, 9mm thickness
                                     <br>
                                     <i class="fab fa-windows"></i> Android 10, Android One
-                                    <br> <br>
-                                    <i class="fas fa-sd-card"></i> 64GB/128GB storage, microSDXC
                                     <br>
+                                    <i class="fas fa-sd-card"></i> 64GB/128GB storage, microSDXC
                                 </p>
                             </div>
                             <div class="card-footer text-center">
@@ -3542,16 +3570,13 @@
                                     <a href="product_details/detail_motorola_razr_5g.html" target="_blank">
                                         <h5 class="card-title text-center">Motorola Razr 5G</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Exp.2020, September 09
-                                        <br>
                                         <i class="fas fa-mobile-alt"></i> 190g, 8mm thickness
                                         <br>
                                         <i class="fab fa-windows"></i> Android 10
                                         <br>
                                         <i class="fas fa-sd-card"></i> 128GB storage, no card slot
-                                        <br>
-
                                     </p>
 
                                 </div>
@@ -3561,6 +3586,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/motorola_razr_5g.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3585,9 +3611,8 @@
                                     <a href="product_details/detail_nokia_8-3.html" target="_blank">
                                         <h5 class="card-title text-center">Samsung Galaxy Z Fold 5G</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Exp. release 2020, September 18
-                                        <br>
                                         <i class="fas fa-mobile-alt"></i> 282g, 6.9mm thickness
                                         <br>
                                         <i class="fab fa-windows"></i> Android 10, One UI 2.5
@@ -3602,6 +3627,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/samsung_galaxy_z_flip.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3626,9 +3652,8 @@
                                     <a href="product_details/detail_iphone_11_pro_max.html" target="_blank">
                                         <h5 class="card-title text-center">Samsung Galaxy Z flip 5G</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2020, August 07
-                                        <br>
                                         <i class="fas fa-mobile-alt"></i> 183g, 7.2mm thickness
                                         <br>
                                         <i class="fab fa-windows"></i> Android 10, One UI 2
@@ -3643,6 +3668,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/samsung_galaxy_z_flip.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3667,9 +3693,8 @@
                                     <a href="product_details/detail_nokia_9_PureView.html" target="_blank">
                                         <h5 class="card-title text-center">Nokia 9 PureView</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2019, March 15
-                                        <br>
                                         <i class="fas fa-mobile-alt"></i> 172g, 8mm thickness
                                         <br>
                                         <i class="fab fa-windows"></i> Android 9.0, Android 10.0
@@ -3683,6 +3708,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/samsung_s20_fe.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3707,8 +3733,8 @@
                                     <a href="product_details/detail_nokia_2-3.html" target="_blank">
                                         <h5 class="card-title text-center">Nokia 8.3 5G</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2019, December 19 <br>
                                         <i class="fas fa-mobile-alt"></i> 183g, 8.7mm thickness <br>
                                         <i class="fab fa-windows"></i> Android 9.0, Android 10
                                         <br>
@@ -3747,8 +3773,8 @@
                                     <a href="product_details/detail_samsung_S20.html" target="_blank">
                                         <h5 class="card-title text-center">Samsung Galaxy S20 5G</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2019, December 19 <br>
                                         <i class="fas fa-mobile-alt"></i> 183g, 8.7mm thickness <br>
                                         <i class="fab fa-windows"></i> Android 9.0, Android 10
                                         <br>
@@ -3761,6 +3787,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/samsung_s20_fe.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3785,8 +3812,8 @@
                                     <a href="product_details/detail_samsung_M31s.html" target="_blank">
                                         <h5 class="card-title text-center">Samsung Galaxy M31s</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2019, December 19 <br>
                                         <i class="fas fa-mobile-alt"></i> 183g, 8.7mm thickness <br>
                                         <i class="fab fa-windows"></i> Android 9.0, Android 10
                                         <br>
@@ -3799,6 +3826,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/samsung_m31s.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3823,8 +3851,8 @@
                                     <a href="product_details/detail_iphone_11.html" target="_blank">
                                         <h5 class="card-title text-center">Apple Iphone 11</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2019, December 19 <br>
                                         <i class="fas fa-mobile-alt"></i> 183g, 8.7mm thickness <br>
                                         <i class="fab fa-windows"></i> Android 9.0, Android 10
                                         <br>
@@ -3837,6 +3865,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/iPHONE 11.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -3861,15 +3890,13 @@
                                     <a href="product_details/detail_motorola_moto_G9.html" target="_blank">
                                         <h5 class="card-title text-center">Motorola Moto G9</h5>
                                     </a>
+                                    <a class="add-to-cart btn btn-danger" data-name="" data-price="" data-img="">Add To Cart</a>
                                     <p class="card-text">
-                                        <i class="fas fa-calendar-day"></i> Released 2020, September 07
-                                        <br>
                                         <i class="fas fa-mobile-alt"></i> 223g, 9.7mm thickness
                                         <br>
                                         <i class="fab fa-windows"></i> Android 10
                                         <br>
                                         <i class="fas fa-sd-card"></i> 128GB storage, microSDXC
-                                        <br>
                                     </p>
                                 </div>
                                 <div class="card-footer text-center">
@@ -3877,6 +3904,7 @@
                                         data-target="#exampleModal-4"><i class="fas fa-sync hvr-icon"></i> Compare</a>
                                     <a href="docs/iPHONE 11.docx" class="btn btn-warning hvr-icon-drop"
                                         data-toggle=popover><i class="fas fa-download hvr-icon"></i> Download</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -4083,6 +4111,8 @@
 
     <!-- Custom JS  -->
     <script src="js/script.js"></script>
+
+    <script src="js/shopping_cart.js"></script>
 
     <!-- Custom headline animation JS  -->
     <script src="js/headline_animation.js"></script>

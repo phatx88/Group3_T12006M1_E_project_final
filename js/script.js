@@ -307,8 +307,17 @@ $(document).ready(function () {
         placement: 'bottom',
         html: true,
         trigger: 'hover',
-        title: 'More Features',
-        content: 'available in Word Docs'
+        title: 'Download',
+        content: 'Full Features'
+    });
+
+    $("[data-toggle=popover2]").popover({
+        container: 'body',
+        placement: 'bottom',
+        html: true,
+        trigger: 'hover',
+        title: 'Compare',
+        content: 'with other models'
     });
 
     //tooltip on Contact Page
