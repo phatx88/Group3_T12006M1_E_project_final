@@ -221,41 +221,71 @@ displayCart();
 
 
 //Add to cart animation source from code pen
-// $('.add-to-cart').on('click', function () {
-//     var cart = $('.shopping-cart');
-//     var imgtodrag = $(this).parents('.card').find("img").eq(0);
-//     if (imgtodrag) {
-//         var imgclone = imgtodrag.clone()
-//             .offset({
-//             top: imgtodrag.offset().top,
-//             left: imgtodrag.offset().left
-//         })
-//             .css({
-//             'opacity': '0.8',
-//                 'position': 'absolute',
-//                 'height': '125px',
-//                 'width': '75px',
-//                 'z-index': '100'
-//         })
-//             .appendTo($('body'))
-//             .animate({
-//             'top': cart.offset().top - 30,
-//                 'left': cart.offset().left - 30,
-//                 'width': '25px',
-//                 'height': '50px'
-//         }, 400, 'easeInOutExpo');
-        
-//         setTimeout(function () {
-//             cart.effect("shake", {
-//                 times: 2
-//             }, 300);
-//         }, 500);
+var AddToCart = document.getElementById('AddToCart');
 
-//         imgclone.animate({
-//             'width': 0,
-//                 'height': 0
-//         }, function () {
-//             $(this).detach()
-//         });
-//     }
-// });
+var addItem = function() {
+	
+	AddToCart.classList.add('Loading')
+	
+	window.setTimeout(function() {
+		
+		AddToCart.classList.remove('Loading')
+		
+		Notify.Add('Item added to cart.')
+		
+	}, 1500)
+	
+}
+
+var Notify = {
+	
+	Remove: function() {
+		
+		var Notification = document.querySelector('.Notify')
+		
+		Notification.classList.add('hide')
+		
+		setTimeout(function() {
+			
+			Notification.parentNode.removeChild(Notification)
+			
+		}, 2000)
+		
+	},
+	
+	Add: function(msg) {
+		
+		var check = document.querySelector('.Notify')
+		var notification = this.Create(msg)
+		var wrapper = document.getElementById('wrapper')
+		
+		if (check) {
+			
+			this.Remove()
+			
+		}
+		
+		document.body.insertBefore(notification, wrapper.nextSibling)
+		
+		setTimeout(this.Remove, 3000)
+		
+	},
+	
+	Create: function(msg) {
+		
+		var wrapper = document.createElement('div')
+		var content = document.createElement('p')
+		var text = document.createTextNode(msg)
+		
+  	content.appendChild(text)
+  	wrapper.appendChild(content)
+		
+		wrapper.classList.add('Notify')
+		
+		return wrapper
+		
+	}
+	
+}
+
+AddToCart.addEventListener('click', addItem)
