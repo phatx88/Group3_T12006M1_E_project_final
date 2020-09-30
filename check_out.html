@@ -8,87 +8,18 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- favicon -->
     <link rel="icon" href="img/favicon-32x32.png" type="image/png">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        .check-out-wrapper {
-            background-color: white;
-            background-image: linear-gradient(360deg, #fce043 0%, #fb7ba2 74%);
-            opacity: 0.9;
-        }
-
-        .place-order {
-            width: 250px;
-            margin: 10px 0 20px 0;
-        }
-
-        h2 {
-            font-weight: 900;
-        }
-
-        h2 strong {
-            color: #d8345f;
-        }
-
-        .show-cart li {
-            display: flex;
-        }
-
-        .fa-shopping-cart {
-            position: relative;
-        }
-
-        .fa-shopping-cart .total-count {
-            position: absolute;
-            top: -30%;
-            right: -30%;
-            font-size: x-small;
-        }
-
-        label {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            display: block;
-        }
-
-        .review-cart,
-        .user-info {
-            background-color: white;
-        }
-
-        .icon-container {
-            padding: 2px 0;
-            font-size: 24px;
-        }
-
-        hr {
-            border: 1px solid lightgrey;
-        }
-
-        div.input-group {
-            flex-wrap: nowrap;
-        }
-
-        .minus-item,
-        .plus-item {
-            width: 15px;
-            border-radius: 0;
-        }
-
-        .input-group>.form-control {
-            min-width: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/check_out.css">
+    
 </head>
 
 <body>
     <div class="check-out-wrapper">
         <div class="review-cart container">
             <h2>Ask<strong>Me!</strong>Mobile</h2>
-            <p><a href="index.html"><i class="fa fa-caret-left" aria-hidden="true"></i> Buy another product</a></p>
-            <h4 class="">Review Your Cart&nbsp;
+            <a href="index.html" aria-hidden="true">
+                <button class='one'>Continue <b>Shopping</b></button>
+            </a>
+            <h4 class="">Order Summary&nbsp;
                 <i class="fa fa-shopping-cart">
                     <b><span class="total-count badge badge-danger"></span></b>
                 </i>

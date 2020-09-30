@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+.check-out-wrapper {
+    background-color: white;
+    background-image: linear-gradient(360deg, #fce043 0%, #fb7ba2 74%);
+    opacity: 0.9;
+}
+
+.place-order {
+    width: 250px;
+    margin: 10px 0 20px 0;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+h2 strong {
+    color: #d8345f;
+}
+
+.show-cart li {
+    display: flex;
+}
+
+.fa-shopping-cart {
+    position: relative;
+}
+
+.fa-shopping-cart .total-count {
+    position: absolute;
+    top: -30%;
+    right: -30%;
+    font-size: x-small;
+}
+
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.review-cart, .user-info {
+    background-color: white;
+}
+
+.icon-container {
+    padding: 2px 0;
+    font-size: 24px;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+div.input-group {
+    flex-wrap: nowrap;
+}
+
+.minus-item, .plus-item {
+    width: 15px;
+    border-radius: 0;
+}
+
+.input-group>.form-control {
+    min-width: 50px;
+}
+
+/* Continue shopping button animation */
+
+.one {
+    border: none;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+    overflow: hidden;
+    padding: 20px 40px 20px 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    position: relative;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    -webkit-transition: background-position .7s, box-shadow .4s;
+    transition: background-position .7s, box-shadow .4s;
+    background-size: 110%;
+}
+
+.one:hover {
+    background-position: 0% 30%;
+}
+
+.one:hover:after {
+    right: -40px;
+    -webkit-transition: right .4s, -webkit-transform 30s .2s linear;
+    transition: right .4s, -webkit-transform 30s .2s linear;
+    transition: right .4s, transform 30s .2s linear;
+    transition: right .4s, transform 30s .2s linear, -webkit-transform 30s .2s linear;
+}
+
+.one:before, .one:after {
+    font-family: FontAwesome;
+    display: block;
+    position: absolute;
+}
+
+.one:before {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    font-size: 24px;
+    left: 25px;
+    top: 19px;
+}
+
+.one:after {
+    -webkit-transition: right .4s, -webkit-transform .2s;
+    transition: right .4s, -webkit-transform .2s;
+    transition: right .4s, transform .2s;
+    transition: right .4s, transform .2s, -webkit-transform .2s;
+    font-size: 100px;
+    opacity: .3;
+    right: -100px;
+    top: -30px;
+}
+
+.one {
+    width: 280px;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #E48A3C;
+    background-image: linear-gradient(to bottom, #E48A3C, rgba(222, 135, 61, 0.24)), url(/img/i-love-shopping.jpg);
+}
+
+.one:hover {
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #E48A3C;
+}
+
+.one:hover:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.one:hover:before {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.one:after, .one:before {
+    content: "\f07a";
+}
+
+.one b {
+    color: #FFD9B4;
+    font-weight: 700;
+}
