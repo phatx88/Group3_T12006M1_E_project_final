@@ -178,7 +178,7 @@ function displayCart() {
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
-    //adding shopping cart only display when have at least one item
+    //adding shopping cart only display badge number when have at least one item
     if (shoppingCart.totalCount() == 0)
     {
     $('span.total-count').addClass('d-none');
@@ -220,7 +220,7 @@ $('.show-cart').on("change", ".item-count", function (event) {
 displayCart();
 
 
-//Add to cart animation source from code pen
+//Add to cart animation source code from code pen
 $('.add-to-cart').on('click', function () {
     var cart = $('.shopping-cart');
     var imgtodrag = $(this).parents('.card').find("img").eq(0);
