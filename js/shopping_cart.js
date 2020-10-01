@@ -154,8 +154,13 @@ $('.add-to-cart').click(function (event) {
 
 // Clear items
 $('.clear-cart').click(function () {
-    shoppingCart.clearCart();
-    displayCart();  
+    var r = confirm("Are you sure?");
+    if (r == true) {
+        shoppingCart.clearCart();
+        displayCart();  
+    }
+    else
+    return;
 });
 
 
